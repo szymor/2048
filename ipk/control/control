@@ -1,0 +1,11 @@
+Package: 2048
+Version: 0.1
+Description: A simple 2048 clone. 
+Replaces: 2048
+Section: games
+Priority: optional
+Maintainer: massivebox
+Architecture: mipsel
+Homepage: https://codeberg.org/massivebox/retrofw-2048
+Depends:
+Source: https://codeberg.org/massivebox/retrofw-2048

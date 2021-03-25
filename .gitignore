@@ -1,0 +1,4 @@
+*.dge
+*.o
+best_score.txt
+build.ipk

@@ -1,0 +1,4 @@
+title=2048
+description=A simple 2048 clone.
+exec=/home/retrofw/games/2048/2048.dge
+clock=600
