@@ -1,0 +1,19 @@
+CC := arm-linux-gcc
+SYSROOT := $(shell arm-linux-gcc --print-sysroot)
+CFLAGS := `$(SYSROOT)/usr/bin/sdl-config --libs --cflags` -ggdb3 -O0 --std=c99 -Wall -lSDL_image -lm -lpng -lz -ljpeg
+HDRS :=
+SRCS := src/main.c src/game.c src/graphics.c src/logic.c
+OBJS := $(SRCS:.c=.o)
+
+EXEC := 2048-miyoo
+
+all: $(EXEC)
+
+$(EXEC): $(OBJS) $(HDRS)
+	$(CC) -o $@ $(OBJS) $(CFLAGS)
+
+
+clean:
+	rm -f $(EXEC) $(OBJS)
+
+.PHONY: all clean

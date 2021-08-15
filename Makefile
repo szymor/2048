@@ -4,7 +4,7 @@ HDRS :=
 SRCS := src/main.c src/game.c src/graphics.c src/logic.c
 OBJS := $(SRCS:.c=.o)
 
-EXEC := 2048.dge
+EXEC := 2048
 
 all: $(EXEC)
 
